@@ -8,7 +8,7 @@ authors = [
 requires-python = ">=3.8"
 
 [tool.pytest.ini_options]
-testpaths = "nerdtracker_client/tests"
+testpaths = "tests"
 addopts = [
     "-v",
     "--tb=auto",
@@ -31,5 +31,5 @@ pretty = true
 [tool.isort]
 profile = "black"
 line_length = 120
-src_paths = ["nerdtracker_client"]
+src_paths = ["ikalog"]
 skip = "__init__.py"
