@@ -1,0 +1,35 @@
+[project]
+name = "ikalog3"
+version = "0.0.1"
+description = "IkaLog 3"
+authors = [
+    {name = "IkaLog Team", email = ""},
+]
+requires-python = ">=3.8"
+
+[tool.pytest.ini_options]
+testpaths = "nerdtracker_client/tests"
+addopts = [
+    "-v",
+    "--tb=auto",
+    "--showlocals",
+    "--color=yes",
+]
+markers = [
+    "slow: marks tests as slow",
+]
+
+[tool.black]
+line-length = 120
+target-version = ["py38"]
+
+[tool.mypy]
+python_version = "3.8"
+ignore_missing_imports = true
+pretty = true
+
+[tool.isort]
+profile = "black"
+line_length = 120
+src_paths = ["nerdtracker_client"]
+skip = "__init__.py"
